@@ -125,6 +125,7 @@ graf4 <- departamental %>%
                    max.overlaps = Inf) +
   scale_fill_viridis_c(trans = "sqrt" ,  alpha = 0.4)+
   theme_void()
+
 ggsave(filename = paste0(output, "NumFallecidos.png"),
        width = 6,
        height = 10)
@@ -134,3 +135,8 @@ ggsave(filename = paste0(output, "NumFallecidos.png"),
 graf4
 
 unique(df$DEPARTAMENTO.DOMICILIO)
+
+
+
+
+
